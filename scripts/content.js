@@ -157,7 +157,7 @@ function onNodeCreation(callback, {type, selector} = {}) {
 
 	// RESUME AUDIO CONTEXT ON FIRST USER INTERACTION
 	document.addEventListener("click", () => {
-		if (audio.audioCtx.state === "suspended") {
+		if (audio && audio.audioCtx.state === "suspended") {
 			audio.audioCtx.resume();
 			if (DEBUG) console.log("Resumed AudioContext");
 		}

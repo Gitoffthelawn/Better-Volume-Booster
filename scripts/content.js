@@ -88,10 +88,14 @@ function onNodeCreation(callback, {type, selector} = {}) {
 		}
 	}
 
-	browser.storage.local.onChanged.addListener(() => {
+	function onStorageChange() {
 		if (DEBUG) console.log("Detected storage change");
-		updateVolume()
-	});
+		updateVolume();
+	}
+	browser.storage.local.onChanged.addListener(onStorageChange);
+	window.addEventListener("unload", () => {
+		browser.storage.local.onChanged.removeListener(onStorageChange)
+	}, {once: true});
 
 	browser.runtime.onMessage.addListener(message => {
 		if (message.action == "updateVolume") {

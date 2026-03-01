@@ -103,3 +103,5 @@ _Note that any version might include a number of stylistic changes, which are of
 	<br>- Fixed extension breaking media elements when autoplay is disabled.
 	- v1.15.2:
 	<br>- Rolled back a change to fix the Paramount+ player (again).
+	- v1.15.3:
+	<br>- Mitigated a frequent error message in the Firefox's multiprocess browser console.

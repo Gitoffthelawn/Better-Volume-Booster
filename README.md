@@ -18,9 +18,7 @@ A few additional per-subdomain options can be viewed by right-clicking the exten
 _I am not responsible for any damage to your ears or headphones that may result from the add-on use. Use the add-on responsibly and ensure your headphones can handle the boosted volume levels._
 
 ## Availability
-Available on the [Firefox Add-ons site](https://addons.mozilla.org/firefox/addon/better-volume-booster/)
-<br>
-or directly on this GitHub repository's [releases](https://github.com/zWolfrost/Better-Volume-Booster/releases) page.
+This add-on is currently only available on this GitHub repository's [releases](https://github.com/zWolfrost/Better-Volume-Booster/releases/latest) page.
 
 ## Changelog
 You can see the changes made in each version in the [CHANGELOG.md](CHANGELOG.md) file.
